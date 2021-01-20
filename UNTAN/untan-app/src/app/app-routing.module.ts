@@ -10,9 +10,10 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home'},
   { path: 'home', component: HomeComponent },
-  { path: 'error', component: ErrorComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'comparison', component: ComparisonComponent },
+  { path: 'error', component: ErrorComponent },
+  { path: '**', component: ErrorComponent }
 ];
 
 @NgModule({
