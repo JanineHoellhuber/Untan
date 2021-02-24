@@ -11,26 +11,29 @@ import { Company } from '../../interfaces/company';
 })
 export class ComparisonComponent implements OnInit {
 
-  firmaid: number = 1;
+  company1: Company;
   company2: Company;
-
-//  allCompanies: Array<Company>;
-//  allEmployees: Array<Employee>;
-//  allAddresses: Array<Addresse>;
+  company3: Company;
 
   constructor(private comparisonService: ComparisonService) {
   }
 
   ngOnInit() {
+    this.laodCompany1();
     this.laodCompany2();
-    console.log(this.company2)
-//    this.loadCompanies(1);
+    this.laodCompany3();
   }
-/*
-  async loadCompanies(firmaid: number) {
-    await this.comparisonService.loadCompany(firmaid);
+
+  
+  laodCompany1(): any {
+    this.comparisonService.loadCompany(1)
+    .subscribe(
+      result => {
+        return this.company1 = result;
+      }
+    )
   }
-*/
+
   laodCompany2(): any {
     this.comparisonService.loadCompany(2)
     .subscribe(
@@ -40,39 +43,12 @@ export class ComparisonComponent implements OnInit {
     )
   }
 
-/*
-  iterateOverAdr() {
-    this.company.forEach(element => {
-      return element;
-    });
-  }
-
-  onFetchPosts() {
-    this.fetchAddresse();
-  }
-
-  getKeys(obj){
-    return Object.keys(obj)
-  }
-
-  private fetchAddresse() {
-    this.http
-    .get<{ [key: string]: Company}>('https://delphi.htl-leonding.ac.at:8181/apex/syp_untan_032021/company/firma')
-    .pipe(
-      map(responseData => {
-      const companyArray:  Company[] = [];
-      for(const key in responseData) {
-        if(responseData.hasOwnProperty(key)) {
-          companyArray.push({ ...responseData[key], firmaid: key});
-        }
+  laodCompany3(): any {
+    this.comparisonService.loadCompany(3)
+    .subscribe(
+      result => {
+        return this.company3 = result;
       }
-      return companyArray;
-    })
     )
-    .subscribe( posts => {
-      console.log(posts);
-      this.company = posts;
-    });
   }
-  */
 }
