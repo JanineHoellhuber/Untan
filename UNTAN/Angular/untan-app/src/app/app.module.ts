@@ -3,19 +3,19 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
-import { ComparisonComponent } from './comparison/comparison.component';
-import { ContactComponent } from './contact/contact.component';
-import { ErrorComponent } from './error/error.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ComparisonComponent,
     ContactComponent,
     ErrorComponent,
   ],
@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    MatButtonModule,
     MatSelectModule
   ],
   providers: [],

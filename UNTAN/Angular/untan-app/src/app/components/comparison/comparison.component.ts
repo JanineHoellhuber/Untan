@@ -1,10 +1,8 @@
-import { HttpClient } from '@angular/common/http';
-import { ComparisonService } from './../comparison.service';
-import { Component, Input, OnInit } from '@angular/core';
-import { Company } from '../interface/company';
-import { Employee } from '../interface/employee';
-import { Addresse } from '../interface/addresse';
-import { map } from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
+
+import { ComparisonService } from '../../services/comparison.service';
+
+import { Company } from '../../interfaces/company';
 
 @Component({
   selector: 'app-comparison',
@@ -13,22 +11,36 @@ import { map } from 'rxjs/operators';
 })
 export class ComparisonComponent implements OnInit {
 
-  id: number = 1;
+  firmaid: number = 1;
+  company2: Company;
 
-  company: Company[] = [];
+//  allCompanies: Array<Company>;
+//  allEmployees: Array<Employee>;
+//  allAddresses: Array<Addresse>;
 
-  allCompanys: Array<Company>;
-  allEmployees: Array<Employee>;
-  allAddresses: Array<Addresse>;
-
-  constructor(private comparisonService: ComparisonService,
-              private http: HttpClient) {
-    }
-
-  ngOnInit() {
-    this.fetchAddresse();
+  constructor(private comparisonService: ComparisonService) {
   }
 
+  ngOnInit() {
+    this.laodCompany2();
+    console.log(this.company2)
+//    this.loadCompanies(1);
+  }
+/*
+  async loadCompanies(firmaid: number) {
+    await this.comparisonService.loadCompany(firmaid);
+  }
+*/
+  laodCompany2(): any {
+    this.comparisonService.loadCompany(2)
+    .subscribe(
+      result => {
+        return this.company2 = result;
+      }
+    )
+  }
+
+/*
   iterateOverAdr() {
     this.company.forEach(element => {
       return element;
@@ -61,18 +73,6 @@ export class ComparisonComponent implements OnInit {
       console.log(posts);
       this.company = posts;
     });
-  }
-/*
-  async loadCompanys() {
-    this.allCompanys = await this.comparisonService.loadCompany();
-  }
-
-  async loadEmployees() {
-    this.allEmployees = await this.comparisonService.loadEmployee();
-  }
-
-  async loadAddresses() {
-    //this.addresse = await this.comparisonService.loadAddresse();
   }
   */
 }

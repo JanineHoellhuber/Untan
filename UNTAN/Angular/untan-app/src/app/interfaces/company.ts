@@ -1,4 +1,4 @@
-import { Employee } from '../interface/employee';
+import { Employee } from './employee';
 import { Addresse } from './addresse';
 
 export interface Company{
@@ -7,8 +7,8 @@ export interface Company{
     taetigkeit?: string;
     groesse?: number;
     umsatz?: number;
-    mitarbeiterId?: number;
-    adressId?: number;
+    mitarbeiterId?: Employee;
+    adressId?: Addresse;
     gruendung?: Date;
     cashflow?: number;
     form?: string;

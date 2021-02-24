@@ -1,14 +1,16 @@
+<br>
+
 <div id="designHeader">
     <h1>Sermocore</h1>
 
-    <nav>
-        <button routerLink="/home">Startseite</button>
-        <button routerLink="/comparison">Unternehmen vergleichen</button>
-        <button routerLink="/contact">Kontakt</button>
+    <nav class="styleButton">
+        <button mat-stroked-button color="primary" routerLink="/home">Startseite</button>
+        <button mat-stroked-button color="primary" routerLink="/comparison">Unternehmen vergleichen</button>
+        <button mat-stroked-button color="primary" routerLink="/contact">Kontakt</button>
     </nav>
 </div>
 
-<div id="designContent">
+<div id="designContent" class="styleBody">
     <router-outlet></router-outlet>
 </div>
 

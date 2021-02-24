@@ -2,33 +2,11 @@
 <br>
 
 <div>
-    <table>
-      
-      <!--ng-container *ngFor="let item of fetchAddresse; let i = index">
-          <tr *ngIf="i==0">
-              <th>
-                {{getKeys(item.Addresse)[1]}}              
-              </th>
-            </tr>
-          <tr>
-              <td>
-                {{item.Addresse.plz}}
-              </td>
-              <td>
-                  {{getKeys(item.Employee.Address)[0]}} - {{item.Employee.Address.HouseNo}},
-                  {{item.Employee.Address.State}}, {{item.Employee.Address.Country}}
-              </td>
-            </tr>
-      </ng-container-->
-     
-    </table>
-  </div>
-
-<div *ngFor="let ad of company">
-    <li>{{ad.items}}</li>
+    <li>{{company2.firmaid}}</li>
+    <li>{{company2.firmenname}}</li>
 </div>
 
-<div>
+<!--div>
     <h3>1. Firma</h3>
 
     <select>
@@ -78,6 +56,6 @@
         <li>Mitarbeiteranzahl: </li>
         <li>Leasingarbeiter: </li>
     </ul>
-</div>
+</div-->
 
 <!-- https://medium.com/edureka/angular-dropdown-a9d6c6073204 -->
