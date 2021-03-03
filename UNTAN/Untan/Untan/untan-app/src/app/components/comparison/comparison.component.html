@@ -1,18 +1,29 @@
 <br>
 <br>
 
+<label>Choose a company:</label>
+
+<select name="cars" id="cars">
+  <option value=company1>{{company1.firmenname}}</option>
+  <option value=company2>{{company2.firmenname}}</option>
+  <option value=company3>{{company3.firmenname}}</option>
+</select> 
+
 <div>
     <li>{{company2.firmaid}}</li>
     <li>{{company2.firmenname}}</li>
+    <!--Angular material select-->
 </div>
 
-<!--div>
-    <h3>1. Firma</h3>
+<div>
+    <li>{{company3.firmaid}}</li>
+    <li>{{company3.firmenname}}</li>
+</div>
 
-    <select>
-        <option></option>
-    </select>
-<br>
+<select>
+    <option></option>
+</select>
+<!--br>
     <ul>
         <li>Bundesland: </li>
         <li>Ort: </li>
