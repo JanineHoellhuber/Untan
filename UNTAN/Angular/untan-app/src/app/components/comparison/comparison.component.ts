@@ -19,13 +19,12 @@ export class ComparisonComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.laodCompany1();
-    this.laodCompany2();
-    this.laodCompany3();
+    this.loadCompany1();
+    this.loadCompany2();
+    this.loadCompany3();
   }
 
-  
-  laodCompany1(): any {
+  loadCompany1(): any {
     this.comparisonService.loadCompany(1)
     .subscribe(
       result => {
@@ -34,7 +33,7 @@ export class ComparisonComponent implements OnInit {
     )
   }
 
-  laodCompany2(): any {
+  loadCompany2(): any {
     this.comparisonService.loadCompany(2)
     .subscribe(
       result => {
@@ -43,7 +42,7 @@ export class ComparisonComponent implements OnInit {
     )
   }
 
-  laodCompany3(): any {
+  loadCompany3(): any {
     this.comparisonService.loadCompany(3)
     .subscribe(
       result => {

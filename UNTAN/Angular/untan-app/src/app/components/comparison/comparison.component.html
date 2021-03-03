@@ -1,48 +1,49 @@
 <br>
 <br>
-
-<label>Choose a company:</label>
-
-<select name="cars" id="cars">
-  <option value=company1>{{company1.firmenname}}</option>
-  <option value=company2>{{company2.firmenname}}</option>
-  <option value=company3>{{company3.firmenname}}</option>
-</select> 
-
 <div>
-    <li>{{company2.firmaid}}</li>
-    <li>{{company2.firmenname}}</li>
-    <!--Angular material select-->
-</div>
+    <label>Wählen Sie eine Firma:</label>
 
-<div>
-    <li>{{company3.firmaid}}</li>
-    <li>{{company3.firmenname}}</li>
-</div>
-
-<select>
-    <option></option>
-</select>
-<!--br>
+    <select>
+        <option value=one>{{company1.firmenname}}</option>
+        <option value=two>{{company2.firmenname}}</option>
+    </select>
+    <br> <!--https://material.angular.io/components/select/examples-->
     <ul>
-        <li>Bundesland: </li>
-        <li>Ort: </li>
-        <li>Straße: </li>
-        <li>T&auml;tigkeitsbeschreibung: </li>
-        <li>Unternehmensgr&ouml;ße: </li>
-        <li>Umsatz: </li>
-        <li>Gr&uuml;ndungsjahr: </li>
-        <li>Cashflow: </li>
-        <li>Gesellschaftsform: </li>
-        <li>Eigenkapital: </li>
-        <li>Auszubildende: </li>
-        <li>Festangestellte: </li>
-        <li>Mitarbeiteranzahl: </li>
-        <li>Leasingarbeiter: </li>
+        <li>Bundesland: {{company1.bundesland}}</li>
+        <li>Ort: {{company1.ort}} {{company1.plz}}</li>
+        <li>Straße: {{company1.strasse}} {{company1.hausnummer}}</li>
+        <li>T&auml;tigkeitsbeschreibung: {{company1.taetigkeitsbeschreibung}}</li>
+        <li>Unternehmensgr&ouml;ße: {{company1.unternehmensgroesse}}</li>
+        <li>Umsatz: {{company1.umsatz}}</li>
+        <li>Gr&uuml;ndungsjahr: {{company1.gruendungsjahr}}</li>
+        <li>Cashflow: {{company1.cashflow}}</li>
+        <li>Gesellschaftsform: {{company1.gesellschaftsformen}}</li>
+        <li>Eigenkapital: {{company1.eigenkapital}}</li>
+        <li>Auszubildende: {{company1.auszubildende}}</li>
+        <li>Festangestellte: {{company1.festangestellt}}</li>
+        <li>Mitarbeiteranzahl: {{company1.mitarbeiteranzahl}}</li>
+        <li>Leasingarbeiter: {{company1.leasing}}</li>
     </ul>
-</div>
-
-<div>
+    <!--div>
+        <ul>
+            <li>Bundesland: </li>
+            <li>Ort: </li>
+            <li>Straße: </li>
+            <li>T&auml;tigkeitsbeschreibung: </li>
+            <li>Unternehmensgr&ouml;ße: </li>
+            <li>Umsatz: </li>
+            <li>Gr&uuml;ndungsjahr: </li>
+            <li>Cashflow: </li>
+            <li>Gesellschaftsform: </li>
+            <li>Eigenkapital: </li>
+            <li>Auszubildende: </li>
+            <li>Festangestellte: </li>
+            <li>Mitarbeiteranzahl: </li>
+            <li>Leasingarbeiter: </li>
+        </ul>
+        </div-->
+    </div>
+    <!--div>
     <h3>2. Firma</h3>
 
     <select name="companies">
@@ -69,4 +70,4 @@
     </ul>
 </div-->
 
-<!-- https://medium.com/edureka/angular-dropdown-a9d6c6073204 -->
+    <!-- https://medium.com/edureka/angular-dropdown-a9d6c6073204 -->
