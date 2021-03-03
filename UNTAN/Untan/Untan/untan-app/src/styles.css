@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%;
+}
+
+body {
+    margin-left: 50px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.innerBody {
+    margin-left: 80px;
+}
+
+.styleButton {
+    margin-left: 20px;
+}
+
+.styleBody {
+    margin-left: 40px;
+}

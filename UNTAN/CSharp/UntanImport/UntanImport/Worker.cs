@@ -69,6 +69,7 @@ namespace UntanImport
         private void CheckForUpdatedConfig(string configpath)
         { 
             //TODO: Logic for Updated ConfigFile
+
             currentConfigFile = configpath;
             currentWebSite = @"C:\Users\Lukas\source\repos\Untan\UntanImport\UntanImport\Websites\website.html";
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lukas\\source\\repos\\Untan\\UntanImport\\UntanImport\\UntanImport.csproj": {}
+    "C:\\Users\\Lukas\\Source\\Repos\\Untan\\UNTAN\\CSharp\\UntanImport\\UntanImport\\UntanImport.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lukas\\source\\repos\\Untan\\UntanImport\\UntanImport\\UntanImport.csproj": {
+    "C:\\Users\\Lukas\\Source\\Repos\\Untan\\UNTAN\\CSharp\\UntanImport\\UntanImport\\UntanImport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lukas\\source\\repos\\Untan\\UntanImport\\UntanImport\\UntanImport.csproj",
+        "projectUniqueName": "C:\\Users\\Lukas\\Source\\Repos\\Untan\\UNTAN\\CSharp\\UntanImport\\UntanImport\\UntanImport.csproj",
         "projectName": "UntanImport",
-        "projectPath": "C:\\Users\\Lukas\\source\\repos\\Untan\\UntanImport\\UntanImport\\UntanImport.csproj",
+        "projectPath": "C:\\Users\\Lukas\\Source\\Repos\\Untan\\UNTAN\\CSharp\\UntanImport\\UntanImport\\UntanImport.csproj",
         "packagesPath": "C:\\Users\\Lukas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lukas\\source\\repos\\Untan\\UntanImport\\UntanImport\\obj\\",
+        "outputPath": "C:\\Users\\Lukas\\Source\\Repos\\Untan\\UNTAN\\CSharp\\UntanImport\\UntanImport\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
