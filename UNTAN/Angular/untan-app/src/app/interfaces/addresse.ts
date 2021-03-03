@@ -1,8 +1,8 @@
 export interface Addresse {
-    addressId?: string;
-    state?: string;
-    place?: string;
-    postcode?: number;
-    street?: string;
-    streetNr?: number;
+    adresseid?: string;
+    bundesland?: string;
+    ort?: string;
+    plz?: number;
+    strasse?: string;
+    hausnummer?: number;
 }

@@ -1,7 +1,7 @@
 export interface Employee{
-    employeeId: number;
-    leasingEmployee: number;
-    permanentEmployee: number;
-    trainee: number;
-    numberOfEmployees: number
+    mitarbeiterid: number;
+    leasing: number;
+    festangestellt: number;
+    auszubildende: number;
+    mitarbeiteranzahl: number
 }

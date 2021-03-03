@@ -4,13 +4,13 @@ import { Addresse } from './addresse';
 export interface Company{
     firmaid: string;
     firmenname?: string;
-    taetigkeit?: string;
-    groesse?: number;
+    taetigkeitsbeschreibung?: string;
+    unternehmensgroesse?: number;
     umsatz?: number;
-    mitarbeiterId?: Employee;
-    adressId?: Addresse;
-    gruendung?: Date;
+    mitarbeiterid?: Employee;
+    adresseid?: Addresse;
+    gruendungsjahr?: Date;
     cashflow?: number;
-    form?: string;
-    kapital?: number;
+    gesellschaftsformen?: string;
+    eigenkapital?: number;
 }
