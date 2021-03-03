@@ -18,7 +18,7 @@ create table Adresse
     Bundesland varchar2(30) not null,
     Ort varchar2(30) not null,
     PLZ number,
-    Straße varchar2(30) not null,
+    Strasse varchar2(30) not null,
     Hausnummer varchar2(50)
 );
 
@@ -27,12 +27,12 @@ create table Firma
 (
     Firmaid number not null primary key,
     Firmenname varchar2(30) not null,
-    Tätigkeitsbeschreibung varchar2(30) not null,
-    Unternehmensgröße number,
+    Taetigkeitsbeschreibung varchar2(30) not null,
+    Unternehmensgroesse number,
     Umsatz number,
     Mitarbeiterid number references Mitarbeiter(Mitarbeiterid),
     Adresseid number references Adresse(Adresseid),
-    Gründungsjahr date,
+    Gruendungsjahr date,
     Cashflow number,
     Gesellschaftsformen varchar2(30) not null,
     Eigenkapital number
