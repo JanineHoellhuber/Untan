@@ -1,11 +1,14 @@
+import { Address } from './address';
+import { Employee } from './employee';
+
 export interface Company{
     firmaid: string;
     firmenname?: string;
     taetigkeitsbeschreibung?: string;
     unternehmensgroesse?: number;
     umsatz?: number;
-    mitarbeiterid?: number;
-    adresseid?: number;
+    mitarbeiterid?: Employee;
+    adresseid?: Address;
     gruendungsjahr?: Date;
     cashflow?: number;
     gesellschaftsformen?: string;
