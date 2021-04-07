@@ -11,6 +11,7 @@ import { Company } from '../../interfaces/company';
 })
 export class ComparisonComponent implements OnInit {
 
+  selected: Company[] = [];
   company1: Company;
   company2: Company;
   company3: Company;

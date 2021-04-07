@@ -1,22 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
-
 html, body { 
     height: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    position: relative;
 }
 
 body {
-    margin-left: 50px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0px;
 }
 
-.innerBody {
-    margin-left: 80px;
+
+#designHeader{
+    margin-left: 10px;
 }
 
-.styleButton {
+#title {
+    background-color: #484846;
+    color: orange;
+    padding-left: 15px;
+}
+
+#styleButton {
     margin-left: 20px;
 }
 
-.styleBody {
-    margin-left: 40px;
+#designContent {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    height: auto;
+    background-color: #484846;
+    margin-top: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 1400px;
+    color: white;
+}
+
+#footerTextPosition {
+    padding-left: 20px;
 }
