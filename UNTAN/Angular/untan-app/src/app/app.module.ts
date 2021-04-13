@@ -13,6 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { HomeComponent } from './components/home/home.component';
+import { ComparisonComponent } from './components/comparison/comparison.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 
@@ -20,6 +21,7 @@ import { ErrorComponent } from './components/error/error.component';
   declarations: [
     AppComponent,
     HomeComponent,
+    ComparisonComponent,
     ContactComponent,
     ErrorComponent,
   ],

@@ -11,7 +11,10 @@ import { Company } from '../../interfaces/company';
 })
 export class ComparisonComponent implements OnInit {
 
-  selected: Company[] = [];
+  selected1: Company[] = [];
+  selected2: Company[] = [];
+  selected3: Company[] = [];
+  companies: Company[] = [];
   company1: Company;
   company2: Company;
   company3: Company;
@@ -29,6 +32,8 @@ export class ComparisonComponent implements OnInit {
     this.comparisonService.loadCompany(1)
     .subscribe(
       result => {
+        this.companies.push(result);
+        console.log(this.companies)
         return this.company1 = result;
       }
     )
@@ -38,6 +43,7 @@ export class ComparisonComponent implements OnInit {
     this.comparisonService.loadCompany(2)
     .subscribe(
       result => {
+        this.companies.push(result);
         return this.company2 = result;
       }
     )
@@ -47,8 +53,8 @@ export class ComparisonComponent implements OnInit {
     this.comparisonService.loadCompany(3)
     .subscribe(
       result => {
+        this.companies.push(result);
         return this.company3 = result;
       }
     )
-  }
-}
+  }}
